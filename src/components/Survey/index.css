@@ -13,3 +13,106 @@
   align-items: center;
   justify-content: center;
 }
+
+.navbar {
+  box-sizing: border-box;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  background-color: #181818;
+  color: white;
+}
+
+.navbar > .navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.navbar img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar > .navbar-exit {
+  padding: 3px 8px;
+  height: 30px;
+  font-weight: 900;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 300ms all;
+}
+
+.navbar > .navbar-exit:hover {
+  background-color: rgb(189, 189, 189);
+  color: black;
+}
+
+.custom-select {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #181818;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.custom-select * {
+  font-size: 14px;
+  background-color: #303236;
+  font-weight: bold;
+}
+
+.custom-select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 1vh 15px 2vh;
+  font-size: 20px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  text-align: left;
+}
+
+.submit-button {
+  
+    margin-top: 10px;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 5px;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 300ms all;
+  
+}
