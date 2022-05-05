@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { getDatabase, ref, set } from "firebase/database";
 
 import { useAuth } from "../../context/UserContext";
+import { useEvent } from "../../context/EventContext";
 
 import SurveyInner from "../SurveyInner";
 
@@ -27,6 +28,7 @@ function Survey() {
     });
   }
 
+  const { allowTouch } = useEvent();
   const { user, signOutGoogle } = useAuth();
   const navigate = useNavigate();
 
@@ -88,6 +90,7 @@ function Survey() {
     },
   });
 
+  console.log(allowTouch);
   return (
     <>
       <div className="navbar">
@@ -106,7 +109,7 @@ function Survey() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         className="mySwiper"
-        allowTouchMove={true}
+        allowTouchMove={allowTouch}
       >
         <SwiperSlide>
           <SurveyInner
