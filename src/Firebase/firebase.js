@@ -2,16 +2,6 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
-const firebaseConfigNurulah = {
-  apiKey: "AIzaSyDjLr9UqG1oJUpuBRlpSoCWXR5fYVXmJYw",
-  authDomain: "ieee-anket.firebaseapp.com",
-  databaseURL: "https://ieee-anket-default-rtdb.firebaseio.com",
-  projectId: "ieee-anket",
-  storageBucket: "ieee-anket.appspot.com",
-  messagingSenderId: "853358526830",
-  appId: "1:853358526830:web:9f4cbd378b3d75d6e9817f",
-};
-
 const firebaseConfig = {
   apiKey: "AIzaSyC9AqQ2qYPoUnsv0MnIXdQ3LPvfVLXAHxI",
   authDomain: "ieee-anket-b0207.firebaseapp.com",

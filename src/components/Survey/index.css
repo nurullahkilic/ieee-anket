@@ -31,7 +31,7 @@
   color: white;
 }
 
-.navbar > .navbar-right {
+.navbar>.navbar-right {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,7 +46,7 @@
   object-fit: cover;
 }
 
-.navbar > .navbar-exit {
+.navbar>.navbar-exit {
   padding: 3px 8px;
   height: 30px;
   font-weight: 900;
@@ -61,7 +61,7 @@
   transition: 300ms all;
 }
 
-.navbar > .navbar-exit:hover {
+.navbar>.navbar-exit:hover {
   background-color: rgb(189, 189, 189);
   color: black;
 }
@@ -76,7 +76,7 @@
 }
 
 .custom-select * {
-  font-size: 14px;
+  font-size: 18px;
   background-color: #303236;
   font-weight: bold;
 }
@@ -101,18 +101,83 @@
 }
 
 .submit-button {
-  
-    margin-top: 10px;
-    padding: 0 25px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 900;
-    border-radius: 5px;
-    font-family: "Red Hat Display", sans-serif;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    transition: 300ms all;
-  
+
+  margin-top: 10px;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 5px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 300ms all;
+
+}
+
+.image-content {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.wnext-logo {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 75px;
+  transition: 500ms all;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wnext-logo.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(900px);
+}
+
+.wdata-logo {
+  max-height: 150px;
+}
+
+@media screen and (max-width:600px) {
+  .wdata-logo {
+    width: 250px;
+  }
+
+  .wnext-logo {
+    width: 50px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #383838;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.weather {
+  color: #fdd10c;
+}
+
+.temperature {
+  color: #fff;
 }
