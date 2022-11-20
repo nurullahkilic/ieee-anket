@@ -3,13 +3,13 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC9AqQ2qYPoUnsv0MnIXdQ3LPvfVLXAHxI",
-  authDomain: "ieee-anket-b0207.firebaseapp.com",
-  projectId: "ieee-anket-b0207",
-  storageBucket: "ieee-anket-b0207.appspot.com",
-  messagingSenderId: "915879820277",
-  appId: "1:915879820277:web:3df4fa161af124f636bebc",
-  measurementId: "G-P47PMJ3LF4",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 // Use this to initialize the firebase App
