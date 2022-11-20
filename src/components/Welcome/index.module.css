@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  text-align: left;
+  gap: 10px;
+}
+
+.buttonSign {
+  font-family: "Red Hat Display";
+  color: black;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 0 25px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 300ms all;
+}
+
+.buttonSign:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.buttonSign > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+}
+
+.buttonSign > div > h3 {
+  font-family: "Red Hat Display";
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+}
+
+.buttonSign > div > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 560px) {
+  .innerContent {
+    width: 75%;
+  }
+}
